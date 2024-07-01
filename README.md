@@ -1,1 +1,1 @@
-This is the repository for teh support page for my app Speedboat Bonanza
+This is the repository for the support page for my app Speedboat Bonanza
