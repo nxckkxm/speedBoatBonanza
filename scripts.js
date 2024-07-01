@@ -41,10 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         emailjs.send(serviceID, templateID, templateParams)
             .then(response => {
-                alert('Message sent successfully!');
-                form.reset();
-            }, error => {
-                alert('Failed to send message. Please try again.');
-            });
+                console.log('SUCCESS!', response.status, response.text);
+              },
+              (error) => {
+                console.log('FAILED...', error);
+              },
+            );
     });
 });

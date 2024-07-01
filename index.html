@@ -6,11 +6,15 @@
     <title>Speed Boat Bonanza Support</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-        (function() {
-            emailjs.init("fhMUTqjSPt-aFQ5ey");
-        })();
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "fhMUTqjSPt-aFQ5ey",
+        });
+    })();
     </script>
 </head>
 <body>
@@ -23,11 +27,12 @@
             <h2>Frequently Asked Questions</h2>
             <div class="faq-item">
                 <h3>How to play Speed Boat Bonanza?</h3>
-                <p class="answer">Speed Boat Bonanza is an exciting racing game where you navigate your boat through various obstacles and compete against others.</p>
+                <p class="answer">Speed Boat Bonanza is an exciting racing game where you navigate your boat through various obstacles and compete against others. 
+                    Tap either side of the screen to move the boat towards that side.</p>
             </div>
             <div class="faq-item">
                 <h3>How to save my game progress?</h3>
-                <p class="answer">Your game progress is automatically saved to your account. Make sure you are logged in to avoid losing progress.</p>
+                <p class="answer">Your game progress is automatically saved to your device.</p>
             </div>
         </section>
         <section id="contact">
