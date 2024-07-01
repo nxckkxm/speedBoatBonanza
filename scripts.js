@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const form = document.getElementById('contact-form');
     form.addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        // Validate form fields
         let valid = true;
         const inputs = form.querySelectorAll('input, textarea');
         inputs.forEach(input => {
@@ -21,8 +24,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         if (!valid) {
-            event.preventDefault();
             alert('Please fill out all fields.');
+            return;
         }
+
+        // Send email using EmailJS
+        const serviceID = 'service_horhueh';
+        const templateID = 'template_yiwes18';
+
+        const templateParams = {
+            name: form.name.value,
+            email: form.email.value,
+            subject: form.subject.value,
+            message: form.message.value
+        };
+
+        emailjs.send(serviceID, templateID, templateParams)
+            .then(response => {
+                alert('Message sent successfully!');
+                form.reset();
+            }, error => {
+                alert('Failed to send message. Please try again.');
+            });
     });
 });
