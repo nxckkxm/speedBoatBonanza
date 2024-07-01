@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
         emailjs.send(serviceID, templateID, templateParams)
             .then(response => {
                 console.log('SUCCESS!', response.status, response.text);
+                form.reset();
               },
               (error) => {
                 console.log('FAILED...', error);
