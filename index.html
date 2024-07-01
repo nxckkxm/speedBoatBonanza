@@ -1,11 +1,62 @@
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Speedboat Bonanza Support Page</title>
-    </head>
-    <body>
-        <h1>Speedboat Bonanza</h1>
-        
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Boat Bonanza Support</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Speed Boat Bonanza Logo" id="logo">
+        <h1>Speed Boat Bonanza Support</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#troubleshooting">Troubleshooting</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>How to play Speed Boat Bonanza?</h3>
+                <p class="answer">Speed Boat Bonanza is an exciting racing game where you navigate your boat through various obstacles and compete against others.</p>
+            </div>
+            <div class="faq-item">
+                <h3>How to save my game progress?</h3>
+                <p class="answer">Your game progress is automatically saved to your account. Make sure you are logged in to avoid losing progress.</p>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="troubleshooting">
+            <h2>Troubleshooting</h2>
+            <div class="troubleshooting-item">
+                <h3>Why is the game not loading?</h3>
+                <p>Ensure you have a stable internet connection and try restarting the app. If the problem persists, contact support.</p>
+            </div>
+            <div class="troubleshooting-item">
+                <h3>How to report a bug?</h3>
+                <p>You can report bugs via the contact form above. Please provide detailed information about the issue.</p>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
 </html>

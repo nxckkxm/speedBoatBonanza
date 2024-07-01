@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #63B9C0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#logo {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #63B9C0;
+}
+
+.faq-item, .troubleshooting-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3, .troubleshooting-item h3 {
+    cursor: pointer;
+}
+
+.faq-item .answer {
+    display: none;
+    padding-left: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    background-color: #63B9C0;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5aa3a6;
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+}
