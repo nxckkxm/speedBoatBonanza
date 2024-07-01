@@ -1,9 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     color: #333;
-    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
@@ -82,6 +84,10 @@ form input, form textarea {
     margin-top: 5px;
 }
 
+form textarea {
+    height: 150px;
+}
+
 form button {
     background-color: #63B9C0;
     color: white;
@@ -98,5 +104,13 @@ form button:hover {
 @media (max-width: 600px) {
     nav ul {
         flex-direction: column;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 0 10px;
     }
 }
